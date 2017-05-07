@@ -1,0 +1,27 @@
+<%= form_for(couplet) do |f| %>
+  <% if couplet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(couplet.errors.count, "error") %> prohibited this couplet from being saved:</h2>
+
+      <ul>
+      <% couplet.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :couplet %>
+    <%= f.text_area :couplet %>
+  </div>
+
+  <div class="field">
+    <%= f.label :poet_id %>
+    <%= f.collection_select :poet_id, Poet.all, :id, :name %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

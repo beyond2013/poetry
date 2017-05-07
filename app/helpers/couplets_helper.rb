@@ -1,0 +1,2 @@
+module CoupletsHelper
+end

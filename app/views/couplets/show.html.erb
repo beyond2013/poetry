@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Couplet:</strong>
+  <%= @couplet.couplet %>
+</p>
+
+<p>
+  <strong>Poet:</strong>
+  <%= @couplet.poet.name %>
+</p>
+
+<%= link_to 'Edit', edit_couplet_path(@couplet) %> |
+<%= link_to 'Back', couplets_path %>
