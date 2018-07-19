@@ -4,6 +4,9 @@
   <strong>Name:</strong>
   <%= @poet.name %>
 </p>
+<p>
+ <%= image_tag(@poet.image_url.to_s) %>
+</p>
 
 <%= link_to 'Edit', edit_poet_path(@poet) %> |
 <%= link_to 'Back', poets_path %>
