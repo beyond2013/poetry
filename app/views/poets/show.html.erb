@@ -7,6 +7,8 @@
 <p>
  <%= image_tag(@poet.image_url.to_s) %>
 </p>
-
+<% @poet.couplets.each do |c|  %>
+	<p> <%= c.couplet %></p>
+<% end %>
 <%= link_to 'Edit', edit_poet_path(@poet) %> |
 <%= link_to 'Back', poets_path %>
