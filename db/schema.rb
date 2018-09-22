@@ -12,12 +12,15 @@
 
 ActiveRecord::Schema.define(version: 20180716090117) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "couplets", force: :cascade do |t|
     t.text     "couplet"
     t.integer  "poet_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["poet_id"], name: "index_couplets_on_poet_id"
+    t.index ["poet_id"], name: "index_couplets_on_poet_id", using: :btree
   end
 
   create_table "poets", force: :cascade do |t|
@@ -27,4 +30,5 @@ ActiveRecord::Schema.define(version: 20180716090117) do
     t.string   "image"
   end
 
+  add_foreign_key "couplets", "poets"
 end
