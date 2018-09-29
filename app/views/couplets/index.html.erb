@@ -14,7 +14,7 @@
   <tbody>
     <% @couplets.each do |couplet| %>
       <tr>
-        <td><%= couplet.couplet %></td>
+        <td><%= simple_format(couplet.couplet) %></td>
         <td><%= couplet.poet.name %></td>
         <td><%= link_to 'Show', couplet %></td>
         <td><%= link_to 'Edit', edit_couplet_path(couplet) %></td>
