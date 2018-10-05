@@ -1,3 +1,9 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@font-face {
+	font-family: 'Jameel Noori Nastaleeq';
+  font-size: 22px;
+  line-height: 28px;
+	src:asset-url('JameelNooriNastaleeq.ttf') format("truetype");
+}
