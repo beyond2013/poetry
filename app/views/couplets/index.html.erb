@@ -1,14 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Couplets</h1>
-<%= link_to 'New Couplet', new_couplet_path %>
+<h1>اشعار</h1>
+<%= link_to 'نیا شعر شامل کریں', new_couplet_path %>
 <table>
   <thead>
-    <tr>
+   <!-- <tr>
       <th>Couplet</th>
       <th>Poet</th>
       <th colspan="3"></th>
-    </tr>
+	 </tr> -->
   </thead>
 
   <tbody>
@@ -16,9 +16,9 @@
       <tr>
         <td><%= simple_format(couplet.couplet) %></td>
         <td><%= couplet.poet.name %></td>
-        <td><%= link_to 'Show', couplet %></td>
+        <!-- <td><%= link_to 'Show', couplet %></td>
         <td><%= link_to 'Edit', edit_couplet_path(couplet) %></td>
-        <td><%= link_to 'Destroy', couplet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+				<td><%= link_to 'Destroy', couplet, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
       </tr>
     <% end %>
   </tbody>
