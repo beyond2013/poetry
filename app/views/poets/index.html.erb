@@ -2,6 +2,10 @@
 
 <h1>شعراء</h1>
 
+<%= link_to 'نیا شاعر شامل کریں', new_poet_path %>
+<br>
+<br>
+
 <table>
   <thead>
    <!-- <tr>
@@ -15,14 +19,12 @@
       <tr>
         <td><%= link_to poet.name, poet %></td>
 				<td><%= link_to image_tag(poet.image_url(:thumb).to_s), poet %>
-        <td><%= link_to 'Show', poet %></td>
-        <td><%= link_to 'Edit', edit_poet_path(poet) %></td>
+				<!-- <td><%= link_to 'Show', poet %></td> -->
+        <td><%= link_to 'تصحیح کریں', edit_poet_path(poet) %></td>
 				<!-- <td><%= link_to 'Destroy', poet, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<br>
 
-<%= link_to 'New Poet', new_poet_path %>

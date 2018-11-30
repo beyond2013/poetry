@@ -1,4 +1,9 @@
 <h1>خوش آمدید</h1>
+
+<h2>منتخب شاعر اور شعر</h2>
+<%= Poet.find(@couplet.poet_id).name %> 
+<%= simple_format(@couplet.couplet) %> 
+<hr />
 <p>میرے پسندیدہ شعراء اور ان کا کلام</p>
 <ul>
 <li> <%= link_to 'اشعار', couplets_path %></li>
