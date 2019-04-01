@@ -1,8 +1,10 @@
 <div class="jumbotron">
 <h1 class="display-2">خوش آمدید</h1>
 <h2>منتخب شاعر اور شعر</h2>
-<%= Poet.find(@couplet.poet_id).name %> 
+<% if Couplet.exists?  %>
+<%= Poet.find(@couplet.poet_id).name  %> 
 <%= simple_format(@couplet.couplet) %> 
+<% end %>
 </div>
 <hr />
 <p>میرے پسندیدہ شعراء اور ان کا کلام</p>

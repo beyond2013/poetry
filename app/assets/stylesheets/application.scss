@@ -1,0 +1,16 @@
+p{
+	font-family: 'Jameel Noori Nastaleeq';
+	src:asset-url('JameelNooriNastaleeq.ttf') format("truetype");
+	float:right;
+	direction: rtl;
+
+}
+
+.navbar-brand{
+	font-family: 'Jameel Noori Nastaleeq';
+	src:asset-url('JameelNooriNastaleeq.ttf') format("truetype");
+}
+
+
+@import 'bootstrap';
+

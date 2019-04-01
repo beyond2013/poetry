@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
   def index
-		@couplet = Couplet.find(Couplet.pluck(:id).sample)
+		@couplet = Couplet.find_by_id(Couplet.pluck(:id).sample) if Couplet.exists?
   end
 end
