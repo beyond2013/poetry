@@ -1,6 +1,6 @@
 p{
 	font-family: 'Jameel Noori Nastaleeq';
-	src:font-url('JameelNooriNastaleeq.ttf') format("truetype");
+	src:asset-url('JameelNooriNastaleeq.ttf') format("truetype");
 	float:right;
 	direction: rtl;
 
@@ -8,7 +8,7 @@ p{
 
 .navbar-brand{
 	font-family: 'Jameel Noori Nastaleeq';
-	src:font-url('JameelNooriNastaleeq.ttf') format("truetype");
+	src:asset-url('JameelNooriNastaleeq.ttf') format("truetype");
 }
 
 

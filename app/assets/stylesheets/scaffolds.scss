@@ -1,18 +1,19 @@
 body {
   background-color: #fff;
   color: #333;
-  font-family: Jameel Noori Nastaleeq, verdana, arial, helvetica, sans-serif;
-	src: font-url("assets/fonts/JameelNooriNastaleeq.ttf") format("truetype");
+  font-family: 'Jameel Noori Nastaleeq';
+	src: asset-url("JameelNooriNastaleeq.ttf") format("truetype");
   font-size: 22px;
   line-height: 28px;
   margin: 33px;
 }
 
 p, ol, ul, td {
-  font-family: Jameel Noori Nastaleeq, verdana, arial, helvetica, sans-serif;
+  font-family: 'Jameel Noori Nastaleeq';
   font-size: 22px;
   line-height: 28px;
   margin: 33px;
+	text-align: right;
 }
 
 pre {
@@ -69,7 +70,7 @@ div {
   background-color: #f0f0f0;
 
   h2 {
-    text-align: left;
+    text-align: right;
     font-weight: bold;
     padding: 5px 5px 5px 15px;
     font-size: 12px;
