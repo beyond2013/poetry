@@ -5,7 +5,7 @@
 	font-family: 'Jameel Noori Nastaleeq';
   font-size: 22px;
   line-height: 28px;
-	src:asset-url('JameelNooriNastaleeq.ttf') format("truetype");
+	src:font-url('JameelNooriNastaleeq.ttf') format("truetype");
 }
 
 
@@ -14,5 +14,6 @@ p, ol, ul, td {
   font-size: 22px;
   line-height: 28px;
   margin: 33px;
+	text-align: right;
 }
 

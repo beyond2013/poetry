@@ -2,14 +2,16 @@ body {
   background-color: #fff;
   color: #333;
   font-family: 'Jameel Noori Nastaleeq';
-	src: asset-url("JameelNooriNastaleeq.ttf") format("truetype");
+	src: font-url("JameelNooriNastaleeq.ttf") format("truetype");
   font-size: 22px;
   line-height: 28px;
   margin: 33px;
+	text-align: right;
 }
 
 p, ol, ul, td {
   font-family: 'Jameel Noori Nastaleeq';
+	src: font-url("JameelNooriNastaleeq.ttf") format("truetype");
   font-size: 22px;
   line-height: 28px;
   margin: 33px;
