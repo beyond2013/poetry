@@ -28,7 +28,7 @@ class CoupletsController < ApplicationController
 
     respond_to do |format|
       if @couplet.save
-        format.html { redirect_to @couplet, notice: 'Couplet was successfully created.' }
+        format.html { redirect_to @couplet, notice: 'نئے شعر کا کامیابی سے اضافہ کر لیا گیا۔' }
         format.json { render :show, status: :created, location: @couplet }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class CoupletsController < ApplicationController
   def update
     respond_to do |format|
       if @couplet.update(couplet_params)
-        format.html { redirect_to @couplet, notice: 'Couplet was successfully updated.' }
+        format.html { redirect_to @couplet, notice: 'شعر کامیابی سے صحیح کرلیا گیا۔' }
         format.json { render :show, status: :ok, location: @couplet }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class CoupletsController < ApplicationController
   def destroy
     @couplet.destroy
     respond_to do |format|
-      format.html { redirect_to couplets_url, notice: 'Couplet was successfully destroyed.' }
+      format.html { redirect_to couplets_url, notice: 'شعر ریکارڈ سے حذف کرلیا گیا۔' }
       format.json { head :no_content }
     end
   end

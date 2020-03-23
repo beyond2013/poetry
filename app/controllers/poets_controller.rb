@@ -28,7 +28,7 @@ class PoetsController < ApplicationController
 
     respond_to do |format|
       if @poet.save
-        format.html { redirect_to @poet, notice: 'Poet was successfully created.' }
+        format.html { redirect_to @poet, notice: 'نیا شاعر شامل کر لیا گیا۔' }
         format.json { render :show, status: :created, location: @poet }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class PoetsController < ApplicationController
   def update
     respond_to do |format|
       if @poet.update(poet_params)
-        format.html { redirect_to @poet, notice: 'Poet was successfully updated.' }
+        format.html { redirect_to @poet, notice: 'شاعر کی معلومات کامیابی سے درست کر لی گئی۔' }
         format.json { render :show, status: :ok, location: @poet }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class PoetsController < ApplicationController
   def destroy
     @poet.destroy
     respond_to do |format|
-      format.html { redirect_to poets_url, notice: 'Poet was successfully destroyed.' }
+      format.html { redirect_to poets_url, notice: 'شاعرکا ریکارڈ حذف کر دیا گیا۔' }
       format.json { head :no_content }
     end
   end
