@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<!-- <p>
 <strong> <%= @poet.name %> کے اشعار </strong>
 </p>
 <p>
@@ -9,5 +9,28 @@
 <% @poet.couplets.each do |c|  %>
 	<p> <%= simple_format(c.couplet) %></p>
 <% end %>
-<!-- <%= link_to 'Edit', edit_poet_path(@poet) %> -->
+ <%= link_to 'Edit', edit_poet_path(@poet) %> 
+<p> 
 <%= link_to 'تمام شعراء', poets_path %>
+</p>
+-->
+
+<div class="card m-5">
+
+  <div class="card-header">
+    <p>
+    <strong> <%= @poet.name %> کے اشعار </strong>
+    </p>
+    <%= image_tag(@poet.image_url.to_s, class: "float-left") %>
+  </div>
+
+  <div class="card-body">
+    <% @poet.couplets.each do |c|  %>
+        <%= simple_format(c.couplet) %>
+    <% end %>
+  </div>
+
+  <div class="card-footer">
+    <%= link_to 'تمام شعراء', poets_path %>
+  </div>
+</div>
