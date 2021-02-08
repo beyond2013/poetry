@@ -13,7 +13,7 @@ gem 'activerecord-session_store'
 
  gem 'mini_magick'
 # gem for image upload
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails'
 # Use sqlite3 as the database for Active Record
