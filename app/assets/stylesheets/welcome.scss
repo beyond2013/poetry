@@ -3,17 +3,18 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @font-face {
 	font-family: 'Jameel Noori Nastaleeq';
-  font-size: 22px;
-  line-height: 32px;
+//  font-size: 32px ;
+//  line-height: 32px;
 	src:font-url('JameelNooriNastaleeq.ttf') format("truetype");
 }
 
 
 p, ol, ul, td {
   font-family: 'Jameel Noori Nastaleeq';
-  font-size: 22px;
+  font-size: 32px ;
   line-height: 32px;
 //  margin: 33px;
 	text-align: right;
 }
+
 

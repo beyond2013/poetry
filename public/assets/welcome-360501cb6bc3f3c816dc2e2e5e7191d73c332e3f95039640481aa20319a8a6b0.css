@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Jameel Noori Nastaleeq';
+  font-size: 52px !important;
+  line-height: 52px;
+  src: url(/assets/JameelNooriNastaleeq-581050a6a7e43f14b0274e096320c8b988edf2c154ae0110e5fd7999ff1541de.ttf) format("truetype");
+}
+
+/* line 12, app/assets/stylesheets/welcome.scss */
+p, ol, ul, td {
+  font-family: 'Jameel Noori Nastaleeq';
+  font-size: 52px !important;
+  line-height: 52px;
+  text-align: right;
+}
