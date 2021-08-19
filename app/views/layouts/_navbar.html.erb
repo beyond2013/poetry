@@ -12,11 +12,6 @@
       <li>
         <%= link_to 'شعراء', poets_path %>
       </li>
-      <% if user_signed_in? -%>
-        <li><%= link_to 'سائن آوٹ', destroy_user_session_path, :method => :delete %></li>
-      <% else -%>
-        <li><%= link_to 'سائن ان', new_user_session_path %></li>
-      <% end -%>
     </ul>
   </div>
 </nav>

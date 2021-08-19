@@ -1,5 +1,5 @@
 class PoetsController < ApplicationController
-  before_action :set_poet #, only: [:show, :edit, :update, :destroy]
+   #before_action :set_poet #, only: [:show, :edit, :update, :destroy]
 
   # GET /poets
   # GET /poets.json
