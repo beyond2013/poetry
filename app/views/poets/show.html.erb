@@ -1,13 +1,15 @@
 <p id="notice"><%= notice %></p>
 
 <!-- <p>
-<strong> <%= @poet.name %> کے اشعار </strong>
+<strong> <%= @poet.name if Poet.exists? %> کے اشعار </strong>
 </p>
 <p>
  <%= image_tag(@poet.image_url.to_s) %>
 </p>
+<% if Poet.exists? %>
 <% @poet.couplets.each do |c|  %>
 	<p> <%= simple_format(c.couplet) %></p>
+<% end %>
 <% end %>
  <%= link_to 'Edit', edit_poet_path(@poet) %> 
 <p> 
