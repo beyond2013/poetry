@@ -1,5 +1,5 @@
 class CoupletsController < ApplicationController
-  #before_action :set_couplet, only: [:show, :edit, :update, :destroy]
+  before_action :set_couplet, only: [:show, :edit, :update, :destroy]
 
   # GET /couplets
   # GET /couplets.json
