@@ -21,3 +21,5 @@
 .byebug_history
 *.swp
 .env
+
+/config/master.key
