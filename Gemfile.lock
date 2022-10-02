@@ -107,7 +107,11 @@ GEM
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
+<<<<<<< HEAD
     loofah (2.19.0)
+=======
+    loofah (2.18.0)
+>>>>>>> 2369ec099768b128fd1d06eeb38bd50eec8ebbed
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -120,8 +124,14 @@ GEM
     mini_magick (4.11.0)
     mini_mime (1.1.2)
     mini_portile2 (2.8.0)
+<<<<<<< HEAD
     minitest (5.16.3)
     net-imap (0.3.1)
+=======
+    minitest (5.15.0)
+    net-imap (0.2.3)
+      digest
+>>>>>>> 2369ec099768b128fd1d06eeb38bd50eec8ebbed
       net-protocol
     net-pop (0.1.2)
       net-protocol
@@ -130,6 +140,7 @@ GEM
     net-smtp (0.3.2)
       net-protocol
     nio4r (2.5.8)
+<<<<<<< HEAD
     nokogiri (1.13.8)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
@@ -153,6 +164,31 @@ GEM
       activerecord (= 7.0.4)
       activestorage (= 7.0.4)
       activesupport (= 7.0.4)
+=======
+    nokogiri (1.13.6)
+      mini_portile2 (~> 2.8.0)
+      racc (~> 1.4)
+    pg (1.2.3)
+    popper_js (2.9.3)
+    puma (5.6.4)
+      nio4r (~> 2.0)
+    racc (1.6.0)
+    rack (2.2.3.1)
+    rack-test (1.1.0)
+      rack (>= 1.0, < 3)
+    rails (7.0.1)
+      actioncable (= 7.0.1)
+      actionmailbox (= 7.0.1)
+      actionmailer (= 7.0.1)
+      actionpack (= 7.0.1)
+      actiontext (= 7.0.1)
+      actionview (= 7.0.1)
+      activejob (= 7.0.1)
+      activemodel (= 7.0.1)
+      activerecord (= 7.0.1)
+      activestorage (= 7.0.1)
+      activesupport (= 7.0.1)
+>>>>>>> 2369ec099768b128fd1d06eeb38bd50eec8ebbed
       bundler (>= 1.15.0)
       railties (= 7.0.4)
     rails-dom-testing (2.0.3)
